@@ -1,5 +1,5 @@
 function showMessage (message: string):void {
-  console.log(message);
+     console.log(message);
 }
 
 function calc(num1: number, num2:number):number {
