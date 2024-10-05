@@ -9,5 +9,6 @@ async function fetchData<T>(url: string): Promise <T>{
     }
 }
 
-
-
+fetchData<{ id: number; name: string }>('https://jsonplaceholder.typicode.com/users/1')
+  .then((data) => console.log(data))
+  .catch((err) => console.error(err.message));
